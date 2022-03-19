@@ -12,7 +12,7 @@ const Header = ({linkButton ,textButton}: Props) => {
     <>
         <HeaderContainer>
             <Container>
-                <Logo src="/images/logo.svg"/>
+                <Logo src="/images/logo.svg" alt='Controle de video game ao lado da escrita AluraGeek'/>
                 <TextInput />
             </Container>
                 <ButtonWhite link={linkButton} >{textButton}</ButtonWhite>

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Banner = styled.div`
     height: 352px;
     width: 100vw;
-    background-image: url("/images/banner-image.png");
+    background-image: url("/images/banner-image.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,7 +11,7 @@ export const Banner = styled.div`
     display: flex;
     `
 
-export const TitleBanner = styled.h1`
+export const TitleBanner = styled.h2`
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 52px;

@@ -25,4 +25,6 @@ export const Input = styled.input`
 
 export const Icon = styled.img`
     cursor: pointer;
+    width: 17px;
+    height: 17px
 `

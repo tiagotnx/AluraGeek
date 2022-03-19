@@ -5,7 +5,7 @@ const TextInput = () => {
     <>
         <SearchBar>
           <Input placeholder="O que deseja encontrar?"/>
-            <Icon src="/images/lupa.svg"/>
+            <Icon src="/images/lupa.svg" alt='botão para pesquisa'/>
         </SearchBar>
     </>
   )
