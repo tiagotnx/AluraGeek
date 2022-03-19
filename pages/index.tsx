@@ -1,31 +1,25 @@
 import type { NextPage } from 'next';
 import Header from '../src/components/patterns/Header';
-import { Banner, TitleBanner, SubTitle, TextBanner } from '../styles/styles';
-import ButtonBlue from '../src/components/ButtonBlue';
 import Head from 'next/head';
+import SecBanner from '../src/components/patterns/Banner';
+import SecItens from '../src/components/patterns/SecItens';
+import { Main } from '../styles/styles';
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
-      <title>AluraGeek - Home</title>
+      <title>AluraGeek - Página inicial</title>
       </Head>
       <Header textButton='Login' linkButton='/login'/>
-      <Banner title='Imagem de uma mão segurando um cogumelo'>
-        <TextBanner>
-          <TitleBanner>
-            Dezembro Promocional
-          </TitleBanner>
-          <SubTitle>
-            Produtos selecionados com 33% de desconto
-          </SubTitle>
-          <ButtonBlue link="/consoles">
-          Ver Consoles
-          </ButtonBlue>
-        </TextBanner>
-      </Banner>
+      <SecBanner/>
+      <Main>
+        <SecItens titleSection='Star Wars' linkAll='/starwars'/>
+        <SecItens titleSection='Consoles' linkAll='/consoles'/>
+        <SecItens titleSection='Diversos' linkAll='/diversos'/>
+      </Main>
     </>
   )
 }
 
-export default Home
+export default Home;

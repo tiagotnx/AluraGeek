@@ -3,16 +3,17 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.header`
     display: flex;
     align-items: center;
-    max-width: 80vw;
-    height: 115px;
+    width: calc(100% - 4rem);
+    max-width: 70rem;
+    height: 7.1875rem;
     background: #FFFFFF;
     margin: 0 auto;
     justify-content: space-between;
     `
 
 export const Logo = styled.img`
-    width: 176px;
-    height: 50px;
+    width: 11rem;
+    height: 3.125rem;
 `
 
 export const Container = styled.div`

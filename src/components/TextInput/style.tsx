@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
-export const SearchBar = styled.div`
+export const SearchBar = styled.form`
     display: flex;
     align-items: center;
-    padding: 8px 16px;
-    width: 393px;
-    height: 40px;
+    padding: .5rem 1rem;
+    width: clamp(17.5rem, 35vw + 1rem, 30rem);
+    height: 2.5rem;
     background: #F5F5F5;
-    border-radius: 20px;
-    margin: 0 0 0 32px;
+    border-radius: 1.25rem;
+    margin: 0 0 0 2rem;
     `
 
 export const Input = styled.input`
@@ -25,6 +25,13 @@ export const Input = styled.input`
 
 export const Icon = styled.img`
     cursor: pointer;
-    width: 17px;
-    height: 17px
+    width: 1.065rem;
+    height: 1.065rem;
+`
+
+export const Button = styled.button`
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
