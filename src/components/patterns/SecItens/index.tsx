@@ -15,7 +15,7 @@ const SecItens = ({titleSection, linkAll}: Props) => {
                 <Title>{titleSection}</Title>
                     <Link href={linkAll} passHref>
                         <LinkA>Ver tudo
-                            <Seta src='/images/seta.svg'/>
+                            <Seta src='/images/seta.svg' alt='arrow right'/>
                         </LinkA>
                     </Link>
             </Header>

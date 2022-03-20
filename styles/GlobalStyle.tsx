@@ -8,5 +8,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
+        font: inherit;
     }
 `

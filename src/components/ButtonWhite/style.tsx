@@ -4,7 +4,7 @@ export const Button = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 11.375rem;
+    width: clamp(10.375rem, 14vw + 1rem, 11.375rem);
     height: 3.1875rem;
     border: 1px solid #2A7AE4;
     font-family: 'Raleway';

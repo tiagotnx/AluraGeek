@@ -18,3 +18,6 @@ export const Button = styled.a`
         background: #5595E9;
     }
     `
+export const ButtonForm = styled(Button)`
+    width: 165px;
+`

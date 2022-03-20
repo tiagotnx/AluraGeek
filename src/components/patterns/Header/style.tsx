@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
     `
 
 export const Logo = styled.img`
-    width: 11rem;
+    width: clamp(6.25rem,11vw + 1rem, 11rem);;
     height: 3.125rem;
 `
 
