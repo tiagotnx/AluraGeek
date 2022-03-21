@@ -1,14 +1,21 @@
 import Link from 'next/link';
 import { CardItem, Image, NameProduct, Price, ProductPage } from './style';
 
-const Card = () => {
+type Props = {
+  id: number,
+  image: string,
+  price: number,
+  name: string,
+}
+
+const Card = ({id, image, price, name}: Props) => {
   return (
     <>
-        <CardItem>
-            <Image src='./images/unsplash_6FDXGY9J6y4.webp' alt='Caneca Star Wars' />
-            <NameProduct>Produto XYZ</NameProduct>
-            <Price>R$ 60,00</Price>
-            <Link href="/product/id" passHref>
+        <CardItem key={id}>
+            <Image src={image} alt={name} />
+            <NameProduct>{name}</NameProduct>
+            <Price>R$ {price}</Price>
+            <Link href="product/id" passHref>
                 <ProductPage>Ver produto</ProductPage>
             </Link>
         </CardItem>

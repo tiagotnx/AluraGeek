@@ -15,9 +15,9 @@ const Home: NextPage = () => {
       <Header textButton='Login' linkButton='/login' />
       <SecBanner />
       <Main>
-        <SecItens titleSection='Star Wars' linkAll='/starwars' />
-        <SecItens titleSection='Consoles' linkAll='/consoles' />
-        <SecItens titleSection='Diversos' linkAll='/diversos' />
+        <SecItens titleSection='Star Wars' linkAll='/star-wars' products={[]} />
+        <SecItens titleSection='Consoles' linkAll='/consoles' products={[]}/>
+        <SecItens titleSection='Diversos' linkAll='/misc' products={[]}/>
       </Main>
       <Footer />
     </>
