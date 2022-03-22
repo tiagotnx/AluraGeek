@@ -9,42 +9,42 @@
             "name": "Caneca Stormtrooper 3D",
             "price": 59.9,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/star-wars/cristina-hernandez-6FDXGY9J6y4-unsplash.webp"
+            "image": "./images/products/star-wars/cristina-hernandez-6FDXGY9J6y4-unsplash.webp"
           },
           {
             "id": 2,
             "name": "Lego Star Wars",
             "price": 899.9,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/star-wars/horology-hands-epRFE_hBNjo-unsplash.webp"
+            "image": "./images/products/star-wars/horology-hands-epRFE_hBNjo-unsplash.webp"
           },
           {
             "id": 3,
             "name": "Boneco Yoda de porcelana",
             "price": 69.9,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/star-wars/d-a-v-i-d-s-o-n-l-u-n-a-KeGToDVN0l4-unsplash.webp"
+            "image": "./images/products/star-wars/d-a-v-i-d-s-o-n-l-u-n-a-KeGToDVN0l4-unsplash.webp"
           },
           {
             "id": 4,
             "name": "Action figure Stormtrooper",
             "price": 229.9,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/star-wars/ben-lei-4OHkK555s1A-unsplash.webp"
+            "image": "./images/products/star-wars/ben-lei-4OHkK555s1A-unsplash.webp"
           },
           {
             "id": 5,
             "name": "Action figure Baby Yoda",
             "price": 119.9,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/star-wars/jonathan-cooper-R8L1l9RN198-unsplash.webp"
+            "image": "./images/products/star-wars/jonathan-cooper-R8L1l9RN198-unsplash.webp"
           },
           {
             "id": 6,
             "name": "Action figure Kylo Ren",
             "price": 229.9,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/star-wars/michael-marais-1VV1MRafd7A-unsplash.webp"
+            "image": "./images/products/star-wars/michael-marais-1VV1MRafd7A-unsplash.webp"
           }
         ]
       },
@@ -57,42 +57,42 @@
             "name": "Controle Xbox One",
             "price": 299.9,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/consoles/alex-motoc-0POwK6iAiRQ-unsplash.webp"
+            "image": "./images/products/consoles/alex-motoc-0POwK6iAiRQ-unsplash.webp"
           },
           {
             "id": 8,
             "name": "Console PlayStation 5",
             "price": 4999.9,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/consoles/martin-katler-caNzzoxls8Q-unsplash.webp"
+            "image": "./images/products/consoles/martin-katler-caNzzoxls8Q-unsplash.webp"
           },
           {
             "id": 9,
             "name": "Console Nintento Entertainment System",
             "price": 1099.90,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/consoles/jason-leung-ZV7lnfyQLmA-unsplash.webp"
+            "image": "./images/products/consoles/jason-leung-ZV7lnfyQLmA-unsplash.webp"
           },
           {
             "id": 10,
             "name": "Controle Joy-Con Nintendo Switch",
             "price": 349.90,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/consoles/ehimetalor-akhere-unuabona-wa5z9o9fgjw-unsplash.webp"
+            "image": "./images/products/consoles/ehimetalor-akhere-unuabona-wa5z9o9fgjw-unsplash.webp"
           },
           {
             "id": 11,
             "name": "Console Xbox Series X",
             "price": 5499.90,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/consoles/billy-freeman-Zjn4dT993-g-unsplash.webp"
+            "image": "./images/products/consoles/billy-freeman-Zjn4dT993-g-unsplash.webp"
           },
           {
             "id": 12,
             "name": "Console Nintendo Game Boy transparente com jogos",
             "price": 599.90,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/consoles/dim-hou-k-xYhI3-gJM-unsplash.webp"
+            "image": "./images/products/consoles/dim-hou-k-xYhI3-gJM-unsplash.webp"
           }
         ]
       },
@@ -105,42 +105,42 @@
             "name": "Camiseta Atari",
             "price": 54.90,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/misc/red-dot-fMP-oCze3AY-unsplash.webp"
+            "image": "./images/products/misc/red-dot-fMP-oCze3AY-unsplash.webp"
           },
           {
             "id": 14,
             "name": "Camiseta de Controle NES",
             "price": 49.90,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/misc/kelly-sikkema-bUgaIaZysH0-unsplash.webp"
+            "image": "./images/products/misc/kelly-sikkema-bUgaIaZysH0-unsplash.webp"
           },
           {
             "id": 15,
             "name": "Action figure Sonic",
             "price": 149.90,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/misc/hello-i-m-nik-sYVY_ZKwaxU-unsplash.webp"
+            "image": "./images/products/misc/hello-i-m-nik-sYVY_ZKwaxU-unsplash.webp"
           },
           {
             "id": 16,
             "name": "Rádio relógio vintage",
             "price": 179.90,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/misc/joshua-coleman-jMT6BrgBuXU-unsplash.webp"
+            "image": "./images/products/misc/joshua-coleman-jMT6BrgBuXU-unsplash.webp"
           },
           {
             "id": 17,
             "name": "Oculus Quest 2 VR (Realidade Virtual)",
             "price": 2999.90,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/misc/uriel-soberanes-MxVkWPiJALs-unsplash.webp"
+            "image": "./images/products/misc/uriel-soberanes-MxVkWPiJALs-unsplash.webp"
           },
           {
             "id": 18,
             "name": "Plush Pikachu gigante",
             "price": 349.90,
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quos soluta culpa minima sint dignissimos dicta, pariatur sed deleniti saepe quod earum assumenda architecto officiis, voluptates laborum voluptas molestias.",
-            "image": "/products/misc/jon-tyson-r27umXAelDc-unsplash.webp"
+            "image": "./images/products/misc/jon-tyson-r27umXAelDc-unsplash.webp"
           }
         ]
       }

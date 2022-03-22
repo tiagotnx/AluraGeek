@@ -23,12 +23,20 @@ export const Container = styled.div`
 export const Logo = styled.img`
     width: 11rem;
     height: 3.125rem;
+    margin-right: clamp(1.6875rem, 4vw + .5rem, 6.6875rem);
+
+    @media only screen and (max-width: 1024px) {
+        & {
+            margin: 0 0 .5rem 0;
+         }
+       }
+
 `
 
 export const ListLink = styled.menu`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
+    gap: 24px;    
 `
 
 export const Link = styled.li`
@@ -69,7 +77,7 @@ export const Div = styled.div`
 `
 
 export const Input = styled.input`
-    width: 560px;
+    width: clamp(27rem, 48vw + 1rem, 35rem);
     height: 56px;
     background: #FFFFFF;
     border-radius: 4px;
@@ -82,7 +90,7 @@ export const Input = styled.input`
     `
 
 export const TextArea = styled.textarea`
-    width: 560px;
+    width: clamp(27rem, 48vw + 1rem, 35rem);
     height: 82px;
     background: #FFFFFF;
     border-radius: 4px;
@@ -103,4 +111,14 @@ export const TextCopyright = styled.p`
     font-family: 'Raleway';
     font-weight: 500;
     text-align: center;
+`
+
+export const ContainerDiv = styled.div`
+    display: flex;
+
+    @media only screen and (max-width: 1024px) {
+        & {
+           flex-direction: column;
+         }
+       }
 `

@@ -5,6 +5,7 @@ import Footer from '../src/components/patterns/Footer';
 import Header from '../src/components/patterns/Header';
 import SecItens from '../src/components/patterns/SecItens';
 import { Main } from '../styles/styles';
+import category from './api/products.json'
 
 const Home: NextPage = () => {
   return (
@@ -15,9 +16,14 @@ const Home: NextPage = () => {
       <Header textButton='Login' linkButton='/login' />
       <SecBanner />
       <Main>
-        <SecItens titleSection='Star Wars' linkAll='/star-wars' products={[]} />
-        <SecItens titleSection='Consoles' linkAll='/consoles' products={[]}/>
-        <SecItens titleSection='Diversos' linkAll='/misc' products={[]}/>
+        {category.categories.map((category, index) => (
+          <SecItens
+            key={index}
+            title={category.category}
+            categoryLinkHref={category.pathname}
+            products={category.products}
+          />
+        ))}
       </Main>
       <Footer />
     </>

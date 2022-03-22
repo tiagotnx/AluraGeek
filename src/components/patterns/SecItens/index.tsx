@@ -1,43 +1,67 @@
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import Card from '../../Card';
-import { Section, Header, Title, Seta, LinkA, List } from './style';
+import { Header, LinkA, List, Section, Seta, Title } from './style';
 
-type Props = {
-    titleSection: string,
-    linkAll: string,
-    products: any
-}
-
-export const getStaticProps = async () => {
-    const API_URL =
-        "https://gist.githubusercontent.com/omariosouto/0ceab54bdd8182cbd1a4549d32945c1a/raw/578ad1e8e5296fa048e3e7ff6b317f7497b31ad9/alura-cases-faq.json";
-    const res = await fetch(API_URL);
-    const products = await res.json();
-
-    return {
-        props: {
-            products
-        },
-    };
-}
+type ProductProps = {
+    title: string;
+    categoryLinkHref: string;
+    products: {
+        name: string;
+        price: number;
+        description: string;
+        image: string;
+    }[];
+};
 
 
-const SecItens = ({ titleSection, linkAll, products }: Props) => {
+const SecItens = ({ title, categoryLinkHref, products }: ProductProps) => {
+    function useWindowSize(handler?: () => any) {
+        const [windowSize, setWindowSize] = useState<number | null>(null);
+
+        useEffect(() => {
+            setWindowSize(window.innerWidth);
+
+            function resizeListener() {
+                setWindowSize(window.innerWidth);
+                if (handler) handler();
+            }
+
+            window.addEventListener("resize", resizeListener);
+
+            return () => {
+                window.removeEventListener("resize", resizeListener);
+            };
+        }, [handler]);
+
+        return windowSize as number;
+    }
+
+    const windowSize = useWindowSize();
+    const numberOfProducts = windowSize < 1024 ? 4 : 6;
+
     return (
         <>
             <Section>
                 <Header>
-                    <Title>{titleSection}</Title>
-                    <Link href={linkAll} passHref>
+                    <Title>{title}</Title>
+                    <Link href={categoryLinkHref} passHref>
                         <LinkA>Ver tudo
                             <Seta src='/images/seta.svg' alt='arrow right' />
                         </LinkA>
                     </Link>
                 </Header>
                 <List>
-                    {products.map((product: any) => {
-                        <Card id={product.id} image={product.image} price={product.price} name={product.name} />
-                    })}
+                    {products.slice(0, numberOfProducts).map((product, index) => (
+                        <Card
+                            key={index}
+                            image={product.image}
+                            price={product.price}
+                            name={product.name}
+                            id={index}
+                            title={categoryLinkHref}
+                        />
+                    ))}
                 </List>
             </Section>
         </>

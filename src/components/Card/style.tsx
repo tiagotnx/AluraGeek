@@ -6,6 +6,12 @@ export const CardItem = styled.li`
     gap: 0.5rem;
     width: 16%;
     margin-top: 1rem;
+
+    @media only screen and (max-width: 1024px) {
+       & {
+          width: 24%;
+        }
+      }
 `
 
 export const Image = styled.img`
