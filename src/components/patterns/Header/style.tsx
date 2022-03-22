@@ -9,6 +9,12 @@ export const HeaderContainer = styled.header`
     background: #FFFFFF;
     margin: 0 auto;
     justify-content: space-between;
+
+    @media only screen and (max-width: 1024px) {
+        & {
+            height: 72px;
+         }
+       }
     `
 
 export const Logo = styled.img`

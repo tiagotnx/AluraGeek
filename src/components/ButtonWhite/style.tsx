@@ -17,4 +17,10 @@ export const Button = styled.a`
     &:hover {
         background: #D4E4FA;
     }
+
+    @media only screen and (max-width: 1024px) {
+        & {
+            height: 40px;
+         }
+       }
     `
