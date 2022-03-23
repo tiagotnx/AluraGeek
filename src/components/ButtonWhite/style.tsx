@@ -7,7 +7,6 @@ export const Button = styled.a`
     width: clamp(10.375rem, 14vw + 1rem, 11.375rem);
     height: 3.1875rem;
     border: 1px solid #2A7AE4;
-    font-family: 'Raleway';
     font-weight: 400;
     color: #2A7AE4;
     cursor: pointer;

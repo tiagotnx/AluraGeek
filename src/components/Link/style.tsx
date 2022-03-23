@@ -6,7 +6,6 @@ export const Text = styled.li`
 
 export const A = styled.a`
     text-decoration: none;
-    font-family: 'Raleway';
     font-weight: 500;
     color: #464646;
     cursor: pointer;

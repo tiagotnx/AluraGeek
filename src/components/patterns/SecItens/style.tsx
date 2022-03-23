@@ -13,7 +13,6 @@ export const Header = styled.header`
 `
 
 export const Title = styled.h3`
-    font-family: 'Raleway';
     font-weight: 700;
     font-size: 2rem;
     color: #464646;
@@ -21,7 +20,6 @@ export const Title = styled.h3`
 
 export const LinkA = styled.a`
     text-decoration: none;
-    font-family: 'Raleway';
     font-weight: 700;
     color: #2A7AE4;
     display: flex;
@@ -29,7 +27,8 @@ export const LinkA = styled.a`
     align-items: center;
 `
 
-export const Seta = styled.img`
+export const Seta = styled.span`
+    background-image: url("/images/seta.svg");
     width: 1rem;
     height: 1rem;
     margin-left: .5rem;
@@ -40,4 +39,16 @@ export const List = styled.ul`
     list-style: none;
     display: flex;
     gap: 1rem;
+
+
+    @media only screen and (max-width: 1024px) {
+        *:last-child {
+            display: none;
+        }
+    
+        *:nth-child(5) {
+            display: none;
+        }
+    }
+
 `

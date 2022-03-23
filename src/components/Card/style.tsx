@@ -26,7 +26,6 @@ export const Image = styled.img`
 `
 
 export const NameProduct = styled.h4`
-    font-family: 'Raleway';
     font-weight: 500;
     font-size: .875rem;
     color: #464646;
@@ -34,12 +33,10 @@ export const NameProduct = styled.h4`
 `
 
 export const Price = styled.p`
-    font-family: 'Raleway';
     font-weight: 700;
     color: #464646;
 `
 export const ProductPage = styled.a`
-    font-family: 'Raleway';
     font-weight: 700;
     color: #2A7AE4;
     text-decoration: none;

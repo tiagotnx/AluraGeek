@@ -1,15 +1,20 @@
-import { ButtonForm } from '../../ButtonBlue/style';
 import LinkP from '../../Link';
-import { Container, ContainerDiv, Div, Fieldset, FooterCopyright, FooterInfo, FooterSection, Form, Input, Label, Legend, ListLink, Logo, TextArea, TextCopyright } from './style';
+import { Button, Container, ContainerDiv, Div, Fieldset, FooterCopyright, FooterInfo, FooterSection, Form, Input, Label, Legend, ListLink, Logo, TextArea, TextCopyright } from './style';
 
 const Footer = () => {
+    const preventReload =  (event: any) => {
+      event.preventDefault()
+    }
+
   return (
     <>
       <FooterSection>
         <FooterInfo>
           <Container>
             <ContainerDiv>
+              <LinkP href='/'>
               <Logo src='./images/logo.svg' alt='Controle de video game ao lado da escrita AluraGeek' />
+              </LinkP>
               <ListLink>
                 <LinkP href='/'>Quem somos nós</LinkP>
                 <LinkP href='/'>Política de privacidade</LinkP>
@@ -27,7 +32,7 @@ const Footer = () => {
                   <Input id='nameUser' />
                 </Div>
                 <TextArea placeholder='Escreva sua mensagem' />
-                <ButtonForm>Enviar mensagem</ButtonForm>
+                <Button onClick={preventReload}>Enviar mensagem</Button>
               </Fieldset>
             </Form>
           </Container>

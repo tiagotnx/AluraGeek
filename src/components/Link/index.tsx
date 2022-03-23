@@ -3,7 +3,7 @@ import { A, Text } from './style';
 
 type Props = {
     href: string,
-    children: string
+    children: any
 }
 
 const LinkP = ({ href, children }: Props) => {

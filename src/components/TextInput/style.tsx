@@ -16,9 +16,11 @@ export const Input = styled.input`
     margin: 0 0 0 2rem;
     border: none;
     color: #A2A2A2;
-    font-family: 'Raleway';
     font-weight: 400;
     font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font: inherit;
+
 `
 
 export const Icon = styled.img`

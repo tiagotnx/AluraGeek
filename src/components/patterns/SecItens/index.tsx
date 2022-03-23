@@ -16,30 +16,6 @@ type ProductProps = {
 
 
 const SecItens = ({ title, categoryLinkHref, products }: ProductProps) => {
-    function useWindowSize(handler?: () => any) {
-        const [windowSize, setWindowSize] = useState<number | null>(null);
-
-        useEffect(() => {
-            setWindowSize(window.innerWidth);
-
-            function resizeListener() {
-                setWindowSize(window.innerWidth);
-                if (handler) handler();
-            }
-
-            window.addEventListener("resize", resizeListener);
-
-            return () => {
-                window.removeEventListener("resize", resizeListener);
-            };
-        }, [handler]);
-
-        return windowSize as number;
-    }
-
-    const windowSize = useWindowSize();
-    const numberOfProducts = windowSize < 1024 ? 4 : 6;
-
     return (
         <>
             <Section>
@@ -47,12 +23,12 @@ const SecItens = ({ title, categoryLinkHref, products }: ProductProps) => {
                     <Title>{title}</Title>
                     <Link href={categoryLinkHref} passHref>
                         <LinkA>Ver tudo
-                            <Seta src='/images/seta.svg' alt='arrow right' />
+                            <Seta />
                         </LinkA>
                     </Link>
                 </Header>
                 <List>
-                    {products.slice(0, numberOfProducts).map((product, index) => (
+                    {products.map((product, index) => (
                         <Card
                             key={index}
                             image={product.image}

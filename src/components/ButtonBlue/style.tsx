@@ -6,7 +6,6 @@ export const Button = styled.a`
     align-items: center;
     width: 130px;
     height: 51px;
-    font-family: 'Raleway';
     font-weight: 400;
     color: #FFFFFF;
     cursor: pointer;
@@ -18,6 +17,3 @@ export const Button = styled.a`
         background: #5595E9;
     }
     `
-export const ButtonForm = styled(Button)`
-    width: 165px;
-`

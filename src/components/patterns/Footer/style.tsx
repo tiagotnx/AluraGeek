@@ -41,7 +41,6 @@ export const ListLink = styled.menu`
 
 export const Link = styled.li`
     list-style: none;
-    font-family: 'Raleway';
     font-weight: 500;
     color: #464646;
 `
@@ -55,13 +54,11 @@ export const Fieldset = styled.fieldset`
 `
 
 export const Legend = styled.legend`
-    font-family: 'Raleway';
     font-weight: 700;
     color: #464646;
 `
 
 export const Label = styled.label`
-    font-family: 'Raleway';
     font-weight: 400;
     font-size: 0.75rem;
     color: #A2A2A2;
@@ -83,10 +80,11 @@ export const Input = styled.input`
     border-radius: 4px;
     border: none;
     padding: 1.5rem 1rem .25rem;
-    font-family: 'Raleway';
     font-weight: 400;
     color: #464646;
     box-shadow: 0 1px 0 0 #C8C8C8;
+    font: inherit;
+    font-family: 'Raleway', sans-serif;
     `
 
 export const TextArea = styled.textarea`
@@ -94,21 +92,23 @@ export const TextArea = styled.textarea`
     height: 82px;
     background: #FFFFFF;
     border-radius: 4px;
-    font-family: 'Raleway';
     font-weight: 400;
     color: #464646;
     padding: 1rem;
     border: none;
     margin: .5rem 0;
     box-shadow: 0 1px 0 0 #C8C8C8;
-`
+    font-family: 'Raleway', sans-serif;
+    font: inherit;
+    `
 
 export const FooterCopyright = styled.section`
     padding: 2rem 0;
+    width: 100%;
+    background: #FFF;
 `
 
 export const TextCopyright = styled.p`
-    font-family: 'Raleway';
     font-weight: 500;
     text-align: center;
 `
@@ -122,3 +122,24 @@ export const ContainerDiv = styled.div`
          }
        }
 `
+
+export const Button = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 51px;
+    font-weight: 400;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s ease;
+    background: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+
+    &:hover {
+        background: #5595E9;
+    }
+    `

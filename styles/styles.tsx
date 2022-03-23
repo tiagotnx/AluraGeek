@@ -8,5 +8,6 @@ export const Main = styled.main`
     margin: 0 auto;
     gap: 4rem;
     padding: 4rem 0;
+    background: #E5E5E5;
 `
     

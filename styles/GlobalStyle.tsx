@@ -9,5 +9,8 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font: inherit;
+        background: #E5E5E5;
+        font-family: 'Raleway', sans-serif;
+
     }
 `
