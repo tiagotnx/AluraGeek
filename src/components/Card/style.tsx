@@ -8,7 +8,7 @@ export const CardItem = styled.li`
     margin-top: 1rem;
     transition: .2s ease;
 
-    &: hover {
+    &:hover {
         transform: scale(1.1);
     }
 

@@ -13,7 +13,7 @@ const Footer = () => {
           <Container>
             <ContainerDiv>
               <LinkP href='/'>
-              <Logo src='./images/logo.svg' alt='Controle de video game ao lado da escrita AluraGeek' />
+              <Logo src='/images/logo.svg' alt='Controle de video game ao lado da escrita AluraGeek' />
               </LinkP>
               <ListLink>
                 <LinkP href='/'>Quem somos nós</LinkP>

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 import Card from '../../Card';
 import { Header, LinkA, List, Section, Seta, Title } from './style';
 
@@ -11,6 +10,7 @@ type ProductProps = {
         price: number;
         description: string;
         image: string;
+        id: number;
     }[];
 };
 
@@ -34,7 +34,7 @@ const SecItens = ({ title, categoryLinkHref, products }: ProductProps) => {
                             image={product.image}
                             price={product.price}
                             name={product.name}
-                            id={index}
+                            id={product.id}
                             title={categoryLinkHref}
                         />
                     ))}

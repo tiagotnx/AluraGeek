@@ -5,7 +5,7 @@ import Footer from '../src/components/patterns/Footer';
 import Header from '../src/components/patterns/Header';
 import SecItens from '../src/components/patterns/SecItens';
 import { Main } from '../styles/styles';
-import category from './api/products.json'
+import category from '../public/ListOfProducts/products.json'
 
 const Home: NextPage = () => {
   return (
@@ -25,7 +25,6 @@ const Home: NextPage = () => {
           />
         ))}
       </Main>
-      <Footer />
     </>
   )
 }

@@ -10,17 +10,20 @@ type Props = {
   title: string
 }
 
-const Card = ({ image, price, name, id, title}: Props) => {
+const Card = ({ image, price, name, id, title }: Props) => {
   return (
     <>
-        <CardItem>
-            <Image src={image} alt={name} width="100%" height="176px" />
-            <NameProduct>{name}</NameProduct>
-            <Price>R$ {price}</Price>
-            <Link href={`${title}/${id}`} passHref>
-                <ProductPage>Ver produto</ProductPage>
-            </Link>
-        </CardItem>
+      <CardItem>
+        <Image src={image} alt={name} width="100%" height="174px" objectFit="cover" quality={100} />
+        <NameProduct>{name}</NameProduct>
+        <Price>R$ {price}</Price>
+        <Link href={{
+        pathname: '/[title]/[id]',
+        query: { title: `${title}`, id: `${id}` },
+      }} passHref>
+          <ProductPage>Ver produto</ProductPage>
+        </Link>
+      </CardItem>
     </>
   )
 }

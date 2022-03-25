@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app'
+import Footer from '../src/components/patterns/Footer'
 import { GlobalStyle } from '../styles/GlobalStyle'
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -6,6 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   <>
     <Component {...pageProps} />
     <GlobalStyle/>
+    <Footer />
   </>
   )
 }

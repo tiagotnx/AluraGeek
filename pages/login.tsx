@@ -29,7 +29,6 @@ const Login: NextPage = () => {
                          <Button onClick={preventReload}>Entrar</Button>
                 </Form>
             </Main>
-        <Footer />
       </>
     )
   }
