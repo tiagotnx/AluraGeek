@@ -42,11 +42,11 @@ export const List = styled.ul`
 
 
     @media only screen and (max-width: 1024px) {
-        *:last-child {
+        li:last-child {
             display: none;
         }
     
-        *:nth-child(5) {
+        li:nth-child(5) {
             display: none;
         }
     }

@@ -13,7 +13,7 @@ const SecDesc = ({ image, price, name, description, id }: Props) => {
     return (
         <>
             <Section>
-                <Image src={image} width={560} height={403} objectFit="cover" quality={100} />
+                <Image src={image} alt={name} width={560} height={403} objectFit="cover" quality={100} />
                 <Article>
                     <Title>{name}</Title>
                     <Price>R$ {price}</Price>

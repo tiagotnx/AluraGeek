@@ -2,23 +2,38 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Header from '../../src/components/patterns/Header';
 import SecProd from '../../src/components/patterns/SecProd';
-import category from '../../public/ListOfProducts/products.json';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import supabase from '../api/supabase';
 
 
 const Login: NextPage = () => {
     const id = Number(useRouter().query.index);
-    const categoria = useRouter().query.product;
-    
+    const categoria: any = useRouter().query.product;
+
+    const [listaDeProdutos, setListaDeProdutos] = useState([]);
+
+    useEffect(() => {
+        let Products = supabase
+            .from('Products')
+            .select('*')
+            .match({ pathname: `${categoria}`})
+            .then(({ data }: any) => {
+                setListaDeProdutos(data);
+                console.log('Dados da consulta:', data);
+            })
+    }, [categoria])
+
     return (
-        <>
+        <>  
             <Head>
                 <title>AluraGeek - </title>
             </Head>
             <Header textButton='Login' linkButton='/login' />
-            {category.categories.map((category, index) => (category.pathname === categoria ? <SecProd key={index} title='Produtos similares' categoryLinkHref={category.pathname} products={category.products} id={id} /> : null))}
+            <SecProd listaDeProdutos={listaDeProdutos}
+            id={id}
+            categoria={categoria} />
         </>
     )
 }
-
 export default Login;

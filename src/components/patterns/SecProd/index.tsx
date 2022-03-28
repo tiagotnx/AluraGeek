@@ -4,37 +4,28 @@ import SecDesc from '../../ProdDesc';
 
 type ProductProps = {
     id: number;
-    title: string;
-    categoryLinkHref: string;
-    products: {
-        name: string;
-        price: number;
-        description: string;
-        image: string;
-        id: number;
-    }[];
+    listaDeProdutos: Array<{ name: string; price: number; image: string; id: number; description: string; category: string; pathname: string }>;
+    categoria: string;
 };
 
-const SecProd = ({ title, categoryLinkHref, products, id }: ProductProps) => {
+const SecProd = ({ listaDeProdutos, id, categoria }: ProductProps) => {
     return (
         <>
             <Main>
-                {products.map((product, index) => ( id === product.id ?
+                {listaDeProdutos.map( product => ( id === product['id'] ?
                     <SecDesc
-                        key={index}
-                        image={product.image}
-                        price={product.price}
-                        name={product.name}
-                        description={product.description}
-                        id={index}
+                        key={product['id']}
+                        image={product['image']}
+                        price={product['price']}
+                        name={product['name']}
+                        description={product['description']}
+                        id={product['id']}
                         />
                         : null
                 ))}
                 <SecItens
-                    key='1'
-                    title={title}
-                    categoryLinkHref={categoryLinkHref}
-                    products={products}
+                    listaDeProdutos={listaDeProdutos}
+                    categoria={categoria}
                 />
             </Main>
         </>

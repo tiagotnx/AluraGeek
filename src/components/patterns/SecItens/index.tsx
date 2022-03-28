@@ -3,39 +3,32 @@ import Card from '../../Card';
 import { Header, LinkA, List, Section, Seta, Title } from './style';
 
 type ProductProps = {
-    title: string;
-    categoryLinkHref: string;
-    products: {
-        name: string;
-        price: number;
-        description: string;
-        image: string;
-        id: number;
-    }[];
+    listaDeProdutos: Array<{ name: string; price: number; image: string; id: number; description: string; category: string; pathname: string }>;
+    categoria: string;
 };
 
 
-const SecItens = ({ title, categoryLinkHref, products }: ProductProps) => {
+const SecItens = ({ listaDeProdutos, categoria }: ProductProps) => {
     return (
         <>
             <Section>
                 <Header>
-                    <Title>{title}</Title>
-                    <Link href={categoryLinkHref} passHref>
+                    <Title>{ categoria }</Title>
+                    <Link href={`/${categoria}`} passHref>
                         <LinkA>Ver tudo
                             <Seta />
                         </LinkA>
                     </Link>
                 </Header>
                 <List>
-                    {products.map((product, index) => (
+                    {listaDeProdutos.map((product) => (
                         <Card
-                            key={index}
-                            image={product.image}
-                            price={product.price}
-                            name={product.name}
-                            id={product.id}
-                            title={categoryLinkHref}
+                            key={product['id']}
+                            image={product['image']}
+                            price={product['price']}
+                            name={product['name']}
+                            id={product['id']}
+                            title={product['pathname']}
                         />
                     ))}
                 </List>
@@ -43,6 +36,7 @@ const SecItens = ({ title, categoryLinkHref, products }: ProductProps) => {
         </>
     )
 }
+
 
 export default SecItens;
 
